@@ -1,0 +1,145 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* Prevents horizontal scroll */
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #000;
+  color: #0f0;  
+  font-size: 20px;
+}
+
+.terminal {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.terminal-screen {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.terminal-input-form {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.terminal-input {
+  background-color: transparent;
+  color: inherit;  
+  border: none;
+  outline: none;
+  font-family: inherit;
+  font-size: 20px;
+  flex: 1;
+  padding: 5px;
+}
+
+.prompt {
+  color: #0f0; 
+  margin-right: 5px;
+}
+
+h2, p, pre {
+  margin: 30px;
+  word-wrap: pre-line;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+
+  .terminal-input {
+    font-size: 18px;
+  }
+
+  .terminal-input-form {
+    padding: 10px;
+  }
+
+  .terminal-screen {
+    padding: 15px;
+  }
+
+  h2, p, pre {
+    margin: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 16px;
+  }
+
+  .terminal-input {
+    font-size: 16px;
+  }
+
+  .terminal-input-form {
+    padding: 5px;
+  }
+
+  .terminal-screen {
+    padding: 10px;
+  }
+
+  h2, p, pre {
+    margin: 15px;
+  }
+}
+
+/* Container styles */
+.container {
+  width: 100%;
+  max-width: 1200px; /* Ensures a maximum width for large screens */
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+h1, h2, h3 {
+  color: #0f0; /* Ensure text color is consistent */
+  margin: 10px 0;
+}
+
+p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #0f0; /* Ensure text color is consistent */
+  word-wrap: pre-l;
+}
+
+ul {
+  margin: 0;
+  padding-left: 20px;
+  color: #0f0; /* Ensure list items match text color */
+}
+
+/* Additional responsive adjustments for container */
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-size: 1.3em;
+  }
+
+  h3 {
+    font-size: 1.2em;
+  }
+
+  p, ul {
+    font-size: 1em;
+  }
+}
